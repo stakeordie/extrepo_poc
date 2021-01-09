@@ -1,0 +1,15 @@
+{
+  "name": "markdown",
+  "private": true,
+  "scripts": {
+    "predevelop": "chmod +x ./content.sh && ./content.sh",
+    "prebuild": "chmod +x ./content.sh && ./content.sh",
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/vue-remark": "^0.2.6",
+    "gridsome": "^0.7.0"
+  }
+}

@@ -1,0 +1,3 @@
+<template>
+  <VueRemarkContent></VueRemarkContent>
+</template>
