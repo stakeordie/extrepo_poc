@@ -8,7 +8,7 @@
 git clone ssh://git@musashi.lkmx.io:10022/luis.espinoza/markdown.git
 ```
 
-2. Set the repo that contains the markdown files in an environment variables, e.g.
+2. Set the repo that contains the markdown files in the REPO env var, e.g.
 
 ```
 export REPO=git@github.com:luis-espinoza/content.git
