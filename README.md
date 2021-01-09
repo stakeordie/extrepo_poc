@@ -1,14 +1,27 @@
-# Default starter for Gridsome
+# Markdown
 
-This is the project you get when you run `gridsome create new-project`.
+## Setup
 
-### 1. Install Gridsome CLI tool if you don't have
+1. Clone the current project
 
-`npm install --global @gridsome/cli`
+```
+git clone ssh://git@musashi.lkmx.io:10022/luis.espinoza/markdown.git
+```
 
-### 2. Create a Gridsome project
+2. Set the repo that contains the markdown files in an environment variables, e.g.
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+```
+export REPO=git@github.com:luis-espinoza/content.git
+```
+
+3. (Optional) set the name for the target directory of the repo
+
+```
+export DIR=content # <- that's the default
+```
+
+4. Run or build
+
+```
+npm run develop
+```

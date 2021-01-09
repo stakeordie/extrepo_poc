@@ -1,9 +1,16 @@
 #!/bin/bash
 
-if [[ -e "./content" ]]; then
-        cd content
+# directory that contains the markdowns, downloaded from a git repo
+CONTENT_DIR=${DIR:-content}
+
+echo "Content directory: $CONTENT_DIR"
+echo "Getting markdowns from repo $REPO"
+echo
+
+if [[ -e "$CONTENT_DIR" ]]; then
+        cd $CONTENT_DIR
         git pull origin master
         cd .. # weird
 else
-        git clone git@github.com:luis-espinoza/content.git content
+        git clone $REPO $CONTENT_DIR
 fi
